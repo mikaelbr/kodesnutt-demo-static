@@ -1,3 +1,3 @@
 # My static page
 
-Some content.
+Some content updated.
