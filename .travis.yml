@@ -1,0 +1,16 @@
+language: node_js
+node:
+  - 'node'
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  local_dir: docs
+  skip_cleanup: true
+  repo: mikaelbr/kodesnutt-demo-static-host
+  on:
+    branch: master
+  target_branch: master
